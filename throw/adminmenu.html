@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h2>players :</h2>
+    <div class="players-button-container">
+        <button class="button" id="leaderboard">Leaderboard</button>
+        <button class="button" id="add">Add</button>
+        <button class="button" id="update">Update</button>
+        <button class="button" id="delete">Delete</button>
+    </div>
+    <div class="members-button-conatiner">
+        <h2>members :</h2>
+        <button class="button" id="add-members">Add members</button>
+        <button class="button" id="update-members">Update members</button>
+        <button class="button" id="delete-members">Delete members</button>
+    </div>
+
+    </form>
+    <script>
+        document.getElementById('leaderboard').addEventListener('click',()=>{
+            window.location.href = 'leaderboard.php';
+        });
+        document.getElementById('add').addEventListener('click',()=>{
+            window.location.href = 'add.php';
+        });
+        document.getElementById('update').addEventListener('click',()=>{
+            window.location.href = 'update.php';
+        });
+        document.getElementById('delete').addEventListener('click',()=>{
+            window.location.href = 'delete.php';
+        });
+        document.getElementById('add-members').addEventListener('click',()=>{
+            window.location.href = '../backend/addmembers.php';
+        });
+        document.getElementById('update-members').addEventListener('click',()=>{
+            window.location.href = 'updatemembers.php';
+        });
+        document.getElementById('delete-members').addEventListener('click',()=>{
+            window.location.href = 'deletemembers.php';
+        });
+    </script>
+</body>
+</html>

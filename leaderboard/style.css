@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Table Container */
+.table-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Table Header Styles */
+th {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease; /* Animation for hover effect */
+}
+
+/* Table Cell Styles */
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease; /* Animation for hover effect */
+}
+
+/* Row Hover Effect */
+tr:hover td {
+    background: #f8f9fa;
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+}
+
+/* Rank Styles */
+.rank-1 td {
+    background: linear-gradient(45deg, #ffd700, #fff6a5);
+    font-weight: bold;
+}
+
+.rank-2 td {
+    background: linear-gradient(45deg, #c0c0c0, #e8e8e8);
+}
+
+.rank-3 td {
+    background: linear-gradient(45deg, #cd7f32, #daa520);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+        width: 100%; /* Full width on smaller screens */
+    }
+    th, td {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    .table-container {
+        padding: 10px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

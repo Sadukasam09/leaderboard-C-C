@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1>players :</h1>
+    <div class="button-container">
+        <button class="button" id="leaderboard">Leaderboard</button>
+        <button class="button" id="add-players">Add</button>
+        <button class="button" id="update-playes">Update</button>
+        <button class="button" id="delete-players">Delete</button>
+    </div>
+    </form>
+    <script>
+        document.getElementById('leaderboard').addEventListener('click',()=>{
+            window.location.href = 'leaderboard.php';
+        });
+        document.getElementById('add-players').addEventListener('click',()=>{
+            window.location.href = 'add.php';
+        });
+        document.getElementById('update-playes').addEventListener('click',()=>{
+            window.location.href = 'update.php';
+        });
+        document.getElementById('delete-players').addEventListener('click',()=>{
+            window.location.href = 'delete.php';
+        });
+    </script>
+</body>
+</html>
